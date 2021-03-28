@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Lato";
+  src: url("./../../assets/fonts/lato-black.woff2"); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", Fallback, sans-serif; }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content repeat(8, 10rem);
+  grid-template-columns: 1fr repeat(10, minmax(min-content, 17rem)) 1fr;
+  justify-content: center; }
+
+.header {
+  padding: 1.4rem 0;
+  grid-column: 2 / 12;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 3rem;
+  align-items: center; }
+  .header__logo {
+    height: 6rem; }
+
+.search {
+  background-color: #f2f9ff;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .search > * {
+    background-color: #f2f9ff;
+    fill: gray; }
+  .search__input {
+    font-size: 1.4rem;
+    border: none;
+    width: 90%;
+    padding: 1.5rem;
+    transition: all 0.2s ease-in-out; }
+    .search__input:focus {
+      outline: none; }
+  .search__button {
+    background-color: #00eba8;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0 5rem 5rem 0;
+    cursor: pointer;
+    padding: 2rem 3rem;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out; }
+    .search__button:hover, .search__button:focus {
+      color: #fff;
+      outline: none;
+      box-shadow: 0 0 40px 40px #00d197 inset; }
+    .search__button:active {
+      box-shadow: 0 0 40px 40px #00b682 inset; }
+  .search__icon {
+    margin-left: 2.5rem;
+    height: 2rem;
+    width: 2rem; }
+
+.footer {
+  background-color: red;
+  grid-column: 1 / -1; }
+
+.hero {
+  background-color: aqua;
+  grid-column: 2 / 12; }
+
+.features {
+  background-color: blueviolet;
+  grid-column: 2 / 12; }
+
+.banners-top {
+  background-color: coral;
+  grid-column: 2 / 12; }
+
+.banners-center {
+  background-color: #91d119;
+  grid-column: 2 / 12; }
+
+.banners-bottom {
+  background-color: #2035ad;
+  grid-column: 2 / 12; }
+
+.cards-one {
+  background-color: #ff508a;
+  grid-column: 2 / 12; }
+
+.cards-two {
+  background-color: #50c8ff;
+  grid-column: 2 / 12; }
+
+.newsletter {
+  background-color: #07b65e;
+  grid-column: 2 / 12; }

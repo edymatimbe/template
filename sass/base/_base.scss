@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Lato";
+  src: url("./../../assets/fonts/lato-black.woff2");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", Fallback, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: min-content repeat(8, 10rem);
+  grid-template-columns: 1fr repeat(10, minmax(min-content, 17rem)) 1fr;
+  // gap: 0.5rem;
+
+  justify-content: center;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "pharmacy",
+  "version": "1.0.0",
+  "description": "template for a pharmacy",
+  "main": "index.js",
+  "scripts": {
+    "nodesass": "node-sass ./sass/main.scss ./css/styles.css -w"
+  },
+  "author": "Edy Matimbe",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
